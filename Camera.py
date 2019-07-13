@@ -13,5 +13,9 @@ class Plantilla(App):
 	def build(self):
 		return Camara()
 
+class Conexion():
+	def __init__ (self):
+		
+
 if __name__ == "__main__":
 	Plantilla().run()
