@@ -1,0 +1,23 @@
+<Camara>:
+	orientation: 'vertical'
+	Camera:
+		id: camera
+		resolution: 640, 480
+		play: True
+	BoxLayout:
+		orientation: 'horizontal'
+		size_hint_y : None
+		height: '48dp'
+		Button:
+			text: 'Iniciar'
+			on_press: camera.play = not camera.play
+			height: '20dp'
+		Button:
+			text: 'Capturar'
+			on_press: root.capture()
+		Button:
+			text: 'Parar'
+			on_release: camera.play = False
+		Button:
+			text: 'Cerrar'
+			on_release: root.stop()
